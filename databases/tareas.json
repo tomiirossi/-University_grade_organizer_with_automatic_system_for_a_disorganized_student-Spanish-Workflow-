@@ -1,0 +1,37 @@
+{
+  "nombre": "Tareas",
+  "descripcion": "Base de datos de tareas y trabajos practicos pendientes o entregados",
+  "propiedades": {
+    "Nombre": {
+      "tipo": "title",
+      "descripcion": "Nombre o descripcion de la tarea"
+    },
+    "Materia": {
+      "tipo": "relation",
+      "relacionado_con": "Materias",
+      "descripcion": "Materia a la que pertenece la tarea"
+    },
+    "Fecha_Entrega": {
+      "tipo": "date",
+      "descripcion": "Fecha limite de entrega"
+    },
+    "Estado": {
+      "tipo": "select",
+      "opciones": ["Pendiente", "En Progreso", "Entregada", "Atrasada"],
+      "descripcion": "Estado actual de la tarea"
+    },
+    "Prioridad": {
+      "tipo": "select",
+      "opciones": ["Alta", "Media", "Baja"],
+      "descripcion": "Prioridad de la tarea"
+    },
+    "Nota_Obtenida": {
+      "tipo": "number",
+      "descripcion": "Nota obtenida tras la entrega (si aplica)"
+    },
+    "Descripcion": {
+      "tipo": "rich_text",
+      "descripcion": "Descripcion detallada de la tarea"
+    }
+  }
+}

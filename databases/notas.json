@@ -1,0 +1,40 @@
+{
+  "nombre": "Notas",
+  "descripcion": "Base de datos de calificaciones por materia y tipo de evaluacion",
+  "propiedades": {
+    "Nombre": {
+      "tipo": "title",
+      "descripcion": "Descripcion de la evaluacion"
+    },
+    "Materia": {
+      "tipo": "relation",
+      "relacionado_con": "Materias",
+      "descripcion": "Materia a la que corresponde la nota"
+    },
+    "Tipo": {
+      "tipo": "select",
+      "opciones": ["Parcial", "Final", "Trabajo Practico", "Quiz", "Coloquio", "Proyecto"],
+      "descripcion": "Tipo de evaluacion"
+    },
+    "Nota": {
+      "tipo": "number",
+      "descripcion": "Nota obtenida (0-10)"
+    },
+    "Nota_Maxima": {
+      "tipo": "number",
+      "descripcion": "Nota maxima posible"
+    },
+    "Fecha": {
+      "tipo": "date",
+      "descripcion": "Fecha de la evaluacion"
+    },
+    "Recuperatorio": {
+      "tipo": "checkbox",
+      "descripcion": "Indica si es un recuperatorio"
+    },
+    "Observaciones": {
+      "tipo": "rich_text",
+      "descripcion": "Notas u observaciones adicionales"
+    }
+  }
+}

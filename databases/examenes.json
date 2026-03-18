@@ -1,0 +1,40 @@
+{
+  "nombre": "Examenes",
+  "descripcion": "Base de datos de examenes parciales y finales con fechas y resultados",
+  "propiedades": {
+    "Nombre": {
+      "tipo": "title",
+      "descripcion": "Nombre del examen"
+    },
+    "Materia": {
+      "tipo": "relation",
+      "relacionado_con": "Materias",
+      "descripcion": "Materia del examen"
+    },
+    "Tipo": {
+      "tipo": "select",
+      "opciones": ["Primer Parcial", "Segundo Parcial", "Final", "Recuperatorio Parcial", "Recuperatorio Final"],
+      "descripcion": "Tipo de examen"
+    },
+    "Fecha": {
+      "tipo": "date",
+      "descripcion": "Fecha del examen"
+    },
+    "Aula": {
+      "tipo": "rich_text",
+      "descripcion": "Aula o salon donde se toma el examen"
+    },
+    "Temas": {
+      "tipo": "rich_text",
+      "descripcion": "Temas que entran en el examen"
+    },
+    "Nota": {
+      "tipo": "number",
+      "descripcion": "Nota obtenida (0-10)"
+    },
+    "Aprobado": {
+      "tipo": "checkbox",
+      "descripcion": "Indica si el examen fue aprobado"
+    }
+  }
+}

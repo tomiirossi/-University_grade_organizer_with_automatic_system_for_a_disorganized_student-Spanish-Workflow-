@@ -1,0 +1,22 @@
+# Entorno virtual de Python
+venv/
+.venv/
+env/
+
+# Variables de entorno (contiene credenciales)
+.env
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Distribuciones / empaquetado
+dist/
+build/
+*.egg-info/
+
+# Editores
+.vscode/
+.idea/
+*.swp
