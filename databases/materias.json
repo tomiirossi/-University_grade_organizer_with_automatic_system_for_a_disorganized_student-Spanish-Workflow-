@@ -1,0 +1,36 @@
+{
+  "nombre": "Materias",
+  "descripcion": "Base de datos de materias cursadas por semestre",
+  "propiedades": {
+    "Nombre": {
+      "tipo": "title",
+      "descripcion": "Nombre de la materia"
+    },
+    "Codigo": {
+      "tipo": "rich_text",
+      "descripcion": "Codigo de la materia (ej: MAT101)"
+    },
+    "Semestre": {
+      "tipo": "select",
+      "opciones": ["1ero", "2do", "3ero", "4to", "5to", "6to", "7mo", "8vo", "9no", "10mo"],
+      "descripcion": "Semestre en que se cursa"
+    },
+    "Creditos": {
+      "tipo": "number",
+      "descripcion": "Cantidad de creditos de la materia"
+    },
+    "Profesor": {
+      "tipo": "rich_text",
+      "descripcion": "Nombre del profesor"
+    },
+    "Estado": {
+      "tipo": "select",
+      "opciones": ["Cursando", "Aprobada", "Reprobada", "Pendiente"],
+      "descripcion": "Estado actual de la materia"
+    },
+    "Nota_Final": {
+      "tipo": "number",
+      "descripcion": "Nota final obtenida (0-10)"
+    }
+  }
+}
